@@ -5,4 +5,5 @@ image:
     - init: |
         ./mvnw package dockerfile:build -DskipTests=true -Ddockerfile.skip=true
       command: |
-        mysql  < /db/schema.sql
+        mysql  < db/schema.sql
+
