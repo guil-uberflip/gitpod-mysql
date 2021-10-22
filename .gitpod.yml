@@ -2,8 +2,8 @@ image:
   file: .gitpod.dockerfile
 
   tasks:
-    - init: |
-        ./mvnw package dockerfile:build -DskipTests=true -Ddockerfile.skip=true
-      command: |
-        mysql  < db/schema.sql
+    - name: Create schema
+      command: mysql  < db/schema.sql
+
+
 
