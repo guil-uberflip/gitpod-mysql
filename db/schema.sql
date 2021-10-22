@@ -1,5 +1,13 @@
 CREATE DATABASE IF NOT EXISTS university;
 
+ALTER DATABASE university
+  DEFAULT CHARACTER SET utf8
+  DEFAULT COLLATE utf8_general_ci;
+
+#GRANT ALL PRIVILEGES ON university.* TO uf@localhost IDENTIFIED BY 'uf';
+
+USE university;
+
 -- ----------------------------
 -- Table structure for domains
 -- ----------------------------
