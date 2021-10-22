@@ -3,5 +3,4 @@ image:
 
   tasks:
     - init:
-      command: |
-        mysql < /db/schema.sql
+      command: mysql < /db/schema.sql
