@@ -1,9 +1,8 @@
 image:
   file: .gitpod.dockerfile
 
- # tasks:
- #   - name: Create schema
- #     command: mysql  < db/schema.sql
-
-
+  tasks:
+    - name: Create schema
+      command: |
+        mysql  < db/schema.sql
 
