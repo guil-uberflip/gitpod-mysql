@@ -1,2 +1,7 @@
 image:
   file: .gitpod.dockerfile
+
+  tasks:
+    - init:
+      command: |
+        mysql < /db/schema.sql
