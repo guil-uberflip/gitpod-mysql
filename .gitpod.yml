@@ -3,5 +3,13 @@ image:
 
   tasks:
     - name: create schema
-        command: mysql  < db/schema.sql
+        command: "mysql  < db/schema.sql"
+
+
+
+#ports:
+#  - port: 8080
+#    onOpen: open-preview
+#  - port: 3306
+#    onOpen: open-preview
 
