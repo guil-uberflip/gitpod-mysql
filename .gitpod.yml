@@ -1,15 +1,18 @@
 image:
   file: .gitpod.dockerfile
 
-  tasks:
-    - name: create schema
-        command: "mysql  < db/schema.sql"
+tasks:
+  - init: |
+      ./mvnw package dockerfile:build -DskipTests=true -Ddockerfile.skip=true
+    command: |
+      mysql < db/schema.sql
 
+ports:
+  - port: 8080
+    onOpen: open-preview
+  - port: 2375
+    onOpen: ignore
+  - port: 3306
+    onOpen: ignore
 
-
-#ports:
-#  - port: 8080
-#    onOpen: open-preview
-#  - port: 3306
-#    onOpen: open-preview
 
