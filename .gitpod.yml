@@ -3,5 +3,5 @@ image:
 
   tasks:
     - name: create schema
-    - command: mysql  < db/schema.sql
+        command: mysql  < db/schema.sql
 
