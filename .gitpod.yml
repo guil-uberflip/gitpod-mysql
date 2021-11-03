@@ -2,7 +2,7 @@ image:
   file: .gitpod.dockerfile
 
 tasks:
-    command: mysql < db/schema.sql
+    - command: mysql < db/schema.sql
 
 ports:
   - port: 8080
