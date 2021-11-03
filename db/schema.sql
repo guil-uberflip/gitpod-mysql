@@ -4,7 +4,8 @@ ALTER DATABASE university
   DEFAULT CHARACTER SET utf8
   DEFAULT COLLATE utf8_general_ci;
 
-#GRANT ALL PRIVILEGES ON university.* TO uf@localhost IDENTIFIED BY 'uf';
+#CREATE USER 'uberflip'@'%';
+#GRANT ALL PRIVILEGES ON university.* TO uberflip@% IDENTIFIED BY 'pass123';
 
 USE university;
 
